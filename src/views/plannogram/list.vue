@@ -8,8 +8,8 @@
                     <p class="mt5 mb20 tc-green">manage your program</p>
                 </div>
                 <div class="col flex">
-                    <router-link to="/add-user">
-                        <button class="bt-green">+ Add User</button>
+                    <router-link to="/add-Plannogram">
+                        <button class="bt-green">+ Add Plannogram</button>
                     </router-link>
                 </div>
             </div>
@@ -40,15 +40,16 @@
                     </thead>
                     <tbody>
                         <tr v-for="item of list_plannogram" :key="item.list_plannogram">
+                            <td class="center">{{ item.plannogram_name }}</td>
                             <td class="center">{{ item.background_image }}</td>
                             <td class="center">{{ item.Broadcast_Schedule }}</td>
                             <td class="center"><label class="label-green">{{ item.Valid_From }}</label></td>
                             <td class="center"><label class="label-green">{{ item.Valid_Until }}</label></td>
-                            <td class="center">{{ item.Planogram_Status }}</td>
+                            <!-- <td class="center">{{ item.Planogram_Status }}</td> -->
                             <!-- <td class="center"><label class="label-green">{{ item.Planogram_Status }}</label></td> -->
 
                             <td class="center">
-                                <div v-if="item.Planogram_Status === 1">
+                                <div v-if="item.Planogram_Status == 1">
                                     <label class="label-green">Active</label>
                                 </div>
                                 <div v-else="item.Planogram_Status">
@@ -60,12 +61,12 @@
                             </td>
                             <td class="center">
                                 <div class="mt5">
-                                    <router-link to="/edit-user">
+                                    <router-link to="/edit-Plannogram">
                                         <img src="../../assets/icons/edit.svg">
                                     </router-link>
                                 </div>
                                 <div class="mt5">
-                                    <router-link to="/detail-user">
+                                    <router-link to="/detail-Plannogram">
                                         <img src="../../assets/icons/detail.svg">
                                     </router-link>
                                 </div>
@@ -94,45 +95,45 @@ export default {
             list_plannogram: [
                 {
                     
-                    plannogram_name: "Vioni Wita Elya",
+                    plannogram_name: "Flash Sale Minggu ini",
                     background_image: "viowelya",
-                    Broadcast_Schedule: "vioniwitaelya@gmail.com",
-                    Valid_From: 1,
-                    Valid_Until: 1,
+                    Broadcast_Schedule: "Senin",
+                    Valid_From: "01-06-2021",
+                    Valid_Until: "03-06-2021",
                     Planogram_Status: 1
                 },
                 {
-                    plannogram_name: "Vioni Wita Elya",
+                    plannogram_name: "Produk Terbaru",
                     background_image: "viowelya",
-                    Broadcast_Schedule: "vioniwitaelya@gmail.com",
-                    Valid_From: 1,
-                    Valid_Until: 1,
+                    Broadcast_Schedule: "Rabu",
+                    Valid_From: "01-06-2021",
+                    Valid_Until: "03-06-2021",
                     Planogram_Status: 1
                 },
-                {
-                    plannogram_name: "Vioni Wita Elya",
-                    background_image: "viowelya",
-                    Broadcast_Schedule: "vioniwitaelya@gmail.com",
-                    Valid_From: 1,
-                    Valid_Until: 1,
-                    Planogram_Status: 1
-                },
-                {
-                    plannogram_name: "Vioni Wita Elya",
-                    background_image: "viowelya",
-                    Broadcast_Schedule: "vioniwitaelya@gmail.com",
-                    Valid_From: 1,
-                    Valid_Until: 1,
-                    Planogram_Status: 1
-                },
-                {
-                    plannogram_name: "Vioni Wita Elya",
-                    background_image: "viowelya",
-                    Broadcast_Schedule: "vioniwitaelya@gmail.com",
-                    Valid_From: 1,
-                    Valid_Until: 1,
-                    Planogram_Status: 1
-                }
+                // {
+                //     plannogram_name: "Vioni Wita Elya",
+                //     background_image: "viowelya",
+                //     Broadcast_Schedule: "vioniwitaelya@gmail.com",
+                //     Valid_From: 1,
+                //     Valid_Until: 1,
+                //     Planogram_Status: 1
+                // },
+                // {
+                //     plannogram_name: "Vioni Wita Elya",
+                //     background_image: "viowelya",
+                //     Broadcast_Schedule: "vioniwitaelya@gmail.com",
+                //     Valid_From: 1,
+                //     Valid_Until: 1,
+                //     Planogram_Status: 1
+                // },
+                // {
+                //     plannogram_name: "Vioni Wita Elya",
+                //     background_image: "viowelya",
+                //     Broadcast_Schedule: "vioniwitaelya@gmail.com",
+                //     Valid_From: 1,
+                //     Valid_Until: 1,
+                //     Planogram_Status: 1
+                // }
             ]
         }
     }

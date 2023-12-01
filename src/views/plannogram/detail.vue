@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row">
                 <div class="mr40 mt20">
-                    <router-link to="/list-user">
+                    <router-link to="/list-Plannogram">
                         <img src="../../assets/icons/back.svg">
                     </router-link>
                 </div>
                 <div>
-                    <h1 class="m0">Detail User</h1>
+                    <h1 class="m0">Detail Plannogram</h1>
                     <p class="mt5 mb20 tc-green">Your user details</p>
                 </div>
             </div>

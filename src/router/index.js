@@ -7,12 +7,6 @@ import AddUser from '../views/user/add'
 import EditUser from '../views/user/edit'
 import DetailUser from '../views/user/detail'
 
-// Voucher
-import Voucher from '../views/Voucher/list'
-import addVoucher from '../views/Voucher/add'
-import EditVoucher from '../views/Voucher/edit'
-import DetailVoucher from '../views/Voucher/detail'
-
 // Plannogram
 import Plannogram from '../views/Plannogram/list'
 import addPlannogram from '../views/Plannogram/add'
@@ -26,6 +20,7 @@ Vue.use(Router)
 
 export default new Router({
 	routes: [
+		// user
 		{
 			path: '/',
 			name: 'list-user',
@@ -57,28 +52,8 @@ export default new Router({
 			component: Product
 		},
 
-		{
-			path: '/list-voucher',
-			name: 'list-voucher',
-			component: Voucher
-		},
-		{
-			path: '/add-voucher',
-			name: 'add-voucher',
-			component: addVoucher
-		},
-		{
-			path: '/edit-voucher',
-			name: 'edit-voucher',
-			component: EditVoucher
-		},
-		{
-			path: '/detail-voucher',
-			name: 'detail-voucher',
-			component: DetailVoucher
-		},
-
-
+		
+		// plannogram
 		{
 			path: '/list-Plannogram',
 			name: 'list-Plannogram',

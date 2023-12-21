@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="mr40 mt20">
-                    <router-link to="/edit-Plannogram">
+                    <router-link to="/list-Plannogram">
                         <img src="../../assets/icons/back.svg">
                     </router-link>
                 </div>
@@ -18,12 +18,9 @@
                 <div class="w20">
                     <label class="form-label">Background Image</label>
                 </div>
-                <div class="w80">
-                    <input
-                        class="form-text"
-                        type="text"
-                        placeholder="Masukkan Plannogram"
-                    >
+                <div class="w80 relative">
+                    <input class="hidden" type="file" id="upload-file" />
+                    <!-- <img class="cursor-pointer" src="../../assets/icons/addPhoto.svg" alt="" @click="upload_file()"> -->
                 </div>
             </div>
 
@@ -103,8 +100,8 @@
             </div>
 
             <div class="flex mt30">
-                <router-link to="/list-user">
-                    <button class="bt-submit-green">Update User</button>
+                <router-link to="/list-plannogram">
+                    <button class="bt-submit-green">Update Plannogram</button>
                 </router-link>
             </div>
         </div>
@@ -113,6 +110,6 @@
 
 <script>
 export default {
-	name: 'detail-user'
+	name: 'detail-plannogram'
 }
 </script>

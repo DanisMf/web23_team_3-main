@@ -18,19 +18,19 @@
                 <div class="w20">
                     <label class="form-label">background Image</label>
                 </div>
-                <div class="w80">
-                    <img src="path/to/your/image.jpg" alt="Deskripsi Gambar">
-                    <form action="/proses-form" method="post" enctype="multipart/form-data">
-                        <label for="gambar">Pilih Gambar:</label>
-                        <input type="file" id="gambar" name="gambar" accept="image/*">
-                    </form>
-
-                    <!-- <input
-                        class="form-text"
-                        type="text"
-                        placeholder="Masukkan Plannogram Name"
-                    > -->
-                </div>
+                <!-- <div class="w80 relative">
+                    <input class="hidden" type="file" id="upload-file" />
+                    <img class="cursor-pointer" src="../../assets/icons/addPhoto.png" alt="" @click="upload_file()">
+                </div> -->
+                <label for="imageInput" class="custom-input-label">
+                    <input
+                    id="imageInput"
+                    accept="image/*"
+                    class="hidden"
+                    type="file"
+                    />
+                    <img class="cursor-pointer" src="../../assets/icons/addPhoto.svg" alt="" @click="upload_file()">
+                </label>
             </div>
 
             <div class="mt50 row">
@@ -61,10 +61,10 @@
                         <option value="1">Senin</option>
                         <option value="2">Selasa</option>
                         <option value="3">Rabu</option>
-                        <option value="3">Kamis</option>
-                        <option value="3">Jumat</option>
-                        <option value="3">Sabtu</option>
-                        <option value="3">Minggu</option>
+                        <option value="4">Kamis</option>
+                        <option value="5">Jumat</option>
+                        <option value="6">Sabtu</option>
+                        <option value="7">Minggu</option>
                     </select>
                 </div>
             </div>

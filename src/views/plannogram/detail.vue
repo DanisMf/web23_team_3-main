@@ -13,28 +13,38 @@
                 </div>
             </div>
             <hr class="uline-grey">
+
+            
             <div class="mt50">
                 <p>Name:</p>
                 <h2>Vioni Wita Elya</h2>
             </div>
+
+
             <div class="mt10">
                 <p class="detail-title-bold">Username:</p>
                 <p>viowelya</p>
             </div>
+
+
             <div class="mt10">
                 <p class="detail-title-bold">Email:</p>
                 <p>vioniwitaelya@gmail.com</p>
             </div>
+
+
             <div>
                 <p class="detail-title-bold">Roles</p>
                 <label class="label-green">Super Admin</label>
             </div>
+
+
         </div>
     </div>
 </template>
 
 <script>
 export default {
-	name: 'detail-user'
+	name: 'detail-plannogram'
 }
 </script>
